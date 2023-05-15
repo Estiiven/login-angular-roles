@@ -23,6 +23,8 @@ Back-End: dentro de la carpeta de la api ejecutar el comando "npm run dev".
 
 ![5 five](https://github.com/Estiiven/login-angular-roles/assets/48731786/173abe3d-179a-41d3-a114-f75f1c91c534)
 
+![6 six](https://github.com/Estiiven/login-angular-roles/assets/48731786/c6b69ed8-28a6-43ea-adfd-cf5f47c0153b)
+
 ![7 seven](https://github.com/Estiiven/login-angular-roles/assets/48731786/cc684eed-d03a-4910-a6e1-4b61754abadd)
 
 ![8 eigth](https://github.com/Estiiven/login-angular-roles/assets/48731786/9fb54937-118a-46da-a322-8c913a8d9e84)

@@ -5,7 +5,7 @@ Para el desarrollo de la api se utilizó node.js y typescript
 Los campos del formulario para autenticarse y del CRUD cuentan con todas las validaciones y manejo de errores.
 
 ## Herramientas utilizadas para realización
--TYPESCRIPT-HTML5-CSS3-BOOTSTRAP-ANGULAR 11-ANGULAR MATERIAL-TYPE-ORM-MYSQL
+-BOOTSTRAP-ANGULAR 11-ANGULAR MATERIAL-TYPE-ORM-MYSQL
 
 ## Ejecución del proyecto
 

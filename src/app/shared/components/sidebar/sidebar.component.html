@@ -1,0 +1,30 @@
+<!--OPCIONES DE MENU DE USUSARIO-->
+<!--https://material.angular.io/components/list/overview-->
+ <!--https://fonts.google.com/icons-->
+<mat-nav-list>
+  <a mat-list-item routerLink="/dash">
+    <mat-icon>insert_chart_outlined</mat-icon>
+    <span class="nav-link"> DashBoard</span>
+  </a>
+  <a mat-list-item routerLink="/admin/users">
+    <mat-icon>face</mat-icon>
+    <span class="nav-link">Usuarios</span>
+  </a>
+  <a mat-list-item routerLink="/admin">
+    <mat-icon>calendar_month</mat-icon>
+    <span class="nav-link"> Calendario</span>
+  </a>
+  <a mat-list-item routerLink="/admin">
+    <mat-icon>star_half</mat-icon>
+    <span class="nav-link"> Blog</span>
+  </a>
+  <a mat-list-item (click)="cerrarMenu()">
+    <mat-icon>menu_open</mat-icon>
+    <span class="nav-link"> Cerrar Menú</span>
+  </a>
+  <a mat-list-item (click)="onExit()">
+    <mat-icon>exit_to_app</mat-icon>
+    <span class="nav-link">Cerrar Sesión</span>
+  </a>
+</mat-nav-list>
+

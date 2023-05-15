@@ -1,0 +1,21 @@
+<mat-sidenav-container class="contenedor-general">
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+    <mat-toolbar> Menú
+      <button>
+        <span class="material-symbols-outlined" (click)="cerrarMenu()">
+          disabled_by_default
+          </span>
+      </button>
+    </mat-toolbar>
+    <app-sidebar></app-sidebar>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!--header. toggle by A.material comnutador de menu-->
+    <app-header (AlternarNavegacionLateral)="sidenav.toggle()"></app-header>
+    <!--{{opened}} -> opened-->
+    <router-outlet></router-outlet>
+
+    <!-- <app-footer ></app-footer> -->
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

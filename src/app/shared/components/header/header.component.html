@@ -1,0 +1,37 @@
+<!-- {{isAdmin}} - Role -->
+<mat-toolbar>
+  <!--Si el usuario es igual a admin se muestra el menu de opciones-->
+  <ng-container *ngIf="isAdmin === 'admin'">
+    <button mat-icon-button (click)="NavegacionLaterial()">
+      <mat-icon class="color" >menu</mat-icon>
+    </button>
+  </ng-container>
+    <a routerLink="/">ANGULAR APP</a>
+    <span class="example-spacer"></span>
+      <!--viewLogout se muestra cuando el usuario no esta registrado (!isLogged=false)-->
+      <a
+      *ngIf="isAdmin === 'admin' || isAdmin==='suscriptor'"
+      mat-button
+      routerLink="/suscriptor">Suscriptor
+    </a>
+      <a
+      *ngIf="isAdmin === 'admin' || isAdmin==='suscriptor'"
+      mat-button
+      routerLink="/">Home
+    </a>
+      <a
+      *ngIf="isAdmin === 'admin'"
+      mat-button
+      routerLink="/admin">Admin
+    </a>
+    <a
+      *ngIf="isLogged === true, else viewLogout"
+      mat-button
+      routerLink="/login">Servicios
+    </a>
+  <!--<button (click)="isAdmin = !isAdmin">Cambiar</button>-->
+</mat-toolbar>
+<!--si el usuaruo esta logueado se muestra esto-->
+<ng-template #viewLogout>
+<a mat-button (click)="cerrarSesion()">Cerrar Sesión</a>
+</ng-template>

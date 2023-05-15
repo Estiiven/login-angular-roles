@@ -1,0 +1,56 @@
+<div class="contenedor-general">
+  <div id="childone" class="row">
+    <div class="col-md-6">
+      <div class="table-button-row" id="boton">
+        <button (click)="onOpenModal()" mat-flat-button color="primary" class="btn-new">
+          <span class="material-symbols-outlined">
+            person_add
+          </span>
+          Agregar Usuario
+        </button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <form class="form-inline">
+        <input id="gg" style="width: 50%; " (keyup)="applyFilter($event)" class="form-control mr-sm-2" type="search"
+          placeholder=" 🔍︎ Buscar Usuario">
+      </form>
+    </div>
+  </div>
+  <!--TABLA-->
+  <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+    <!-- Position Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+    <ng-container matColumnDef="username">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
+      <td mat-cell *matCellDef="let element"> {{element.username}} </td>
+    </ng-container>
+    <ng-container matColumnDef="role">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Rol </th>
+      <td mat-cell *matCellDef="let element"> {{element.role}} </td>
+    </ng-container>
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        <pre>           </pre>Acciones
+      </th>
+      <td mat-cell *matCellDef="let element">
+        <div class="table-button-row">
+          <!--boton editar, onOpenModal: recibe el usuario seleccionado (element)-->
+          <button id="btnadd" mat-flat-button color="accent" style="background-color: #636363"
+            (click)="onOpenModal(element)"> Editar
+          </button>
+          <!--eliminar-->
+          <button id="btnremove" mat-flat-button style="background-color: crimson; color:azure"
+            (click)="onDelete(element.id)"> Eliminar
+          </button>
+        </div>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+
+</div>

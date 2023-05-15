@@ -1,0 +1,9 @@
+<div class="container" style="text-align: center;" >
+  <h2 mat-dialog-title>¿Eliminar usuario definitivamente?</h2>
+  <div mat-dialog-content>{{ data }}</div>
+  <div mat-dialog-actions style="justify-content: center;">
+    <button mat-button (click)="onNoClick()" style="color: black;">Cancelar</button>
+    <button mat-button color="" [mat-dialog-close]="true" style="background-color: crimson; color: azure;">Eliminar</button>
+  </div>
+
+</div>

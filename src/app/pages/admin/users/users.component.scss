@@ -1,0 +1,38 @@
+table {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+th.mat-sort-header-sorted {
+  color: black;
+}
+.table-button-row .btn-new {
+  margin: 12px;
+  margin-left: 0%;
+  width: 40%;
+}
+.btn-new {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#btnadd,
+#btnremove {
+  margin: 12px;
+  margin-left: 4%;
+}
+#childone {
+  text-align: center;
+}
+.form-inline {
+  margin-top: 11px;
+  font-family: sans-serif;
+}
+input {
+  font-size: 15px;
+  margin-left: 100px;
+}
+::placeholder {
+  opacity: 0.6;
+  font-style: italic;
+}

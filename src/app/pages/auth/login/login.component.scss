@@ -1,0 +1,50 @@
+.login-form {
+  padding-top: 50px;
+  mat-card-content {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #274046;
+  }
+  mat-card {
+    max-width: 400px;
+    margin: -1rem auto;
+    text-align: center;
+    height: 450px;
+    background-color: #FDFEFE;
+  }
+  .full-width-input {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+  .separator {
+    margin-bottom: 1rem;
+  }
+  #divi {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  mat-icon {
+    font-size: 35px;
+  }
+  /*contenedor registrarse*/
+}
+.container {
+  padding-top: 45px;
+  mat-card-content {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .full-width-input {
+    width: 100%;
+  }
+  .separator {
+    margin-bottom: 3rem;
+  }
+}
+.textColor {
+  color: black;
+}

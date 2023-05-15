@@ -1,0 +1,22 @@
+.spacer {
+  flex: 1 1 auto;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+mat-toolbar {
+  background: #274046;
+}
+/*cursor color*/
+.mat-button:hover,
+.mat-icon-button:hover {
+  background-color: #3c54b4;
+  color: white;
+}
+.color {
+  color: azure;
+}

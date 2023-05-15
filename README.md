@@ -1,14 +1,12 @@
 ## APP Login Roles Angular
-
-Sistema sencillo de autenticación con roles de usuario, desarrollado en Angular 11. El rol administrador tiene acceso a un menú desplegable para gestionar un CRUD de usuarios(suscriptores) y utilizar un filtro para buscarlos. Solo un administrador podrá autenticar nuevos usuarios ya sean otros administradores o suscriptores. El rol de suscriptores tendrá acceso a las secciones destinadas para ese rol, por supuesto limitadas a las del administrador.
+Sistema sencillo de autenticación con roles de usuario, desarrollado en Angular 11. El rol administrador tiene acceso a un menú desplegable para gestionar un CRUD de usuarios(suscriptores) los cuales se almacenan en una base de datos, ademas de utilizar un filtro para poder buscarlos. Solo un administrador podrá autenticar nuevos usuarios ya sean otros administradores ó suscriptores. El rol de suscriptores tendrá acceso a las secciones destinadas para ese rol.
 Para el desarrollo de la api se utilizó node.js y typescript
 Los campos del formulario para autenticarse y del CRUD cuentan con todas las validaciones y manejo de errores.
 
 ## Herramientas utilizadas para realización
--BOOTSTRAP-ANGULAR 11-ANGULAR MATERIAL-TYPE-ORM-MYSQL
+ANGULAR 11-EXPRESS-JWT-GUARDS-INTERCEPTORS-RXJS-TYPEORM-MYSQL-BOOTSTRAP-ANGULAR MATERIAL
 
 ## Ejecución del proyecto
-
 Front-End: Dentro de la carpeta del proyecto ejecutar el comando "ng serve", luego en el navegador http://localhost:4200
 Back-End: dentro de la carpeta de la api ejecutar el comando "npm run dev".
 

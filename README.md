@@ -1,8 +1,8 @@
 # APP Login Roles Angular
 
-Sistema sencillo de autenticacion con roles de usuario, desarrollado en Angular 11. El rol administrador tiene acceso a un menú desplegable para gestionar un CRUD de usuarios(suscriptores) y utilizar un filtro para buscarlos. Solo un administrador podrá autenticar nuevos usuarios ya sean roles o suscriptores. El rol de suscriptores tendrá acceso a unas secciones distintas a las del administrador.
+Sistema sencillo de autenticación con roles de usuario, desarrollado en Angular 11. El rol administrador tiene acceso a un menú desplegable para gestionar un CRUD de usuarios(suscriptores) y utilizar un filtro para buscarlos. Solo un administrador podrá autenticar nuevos usuarios ya sean otros administradores o suscriptores. El rol de suscriptores tendrá acceso a las secciones destinadas para ese rol, por supuesto limitadas a las del administrador.
 Para el desarrollo de la api se utilizó node.js y typescript
-Los campos del formulario para autenticarse y de CRUD cuentan con todas las validaciones y manejo de errores.
+Los campos del formulario para autenticarse y del CRUD cuentan con todas las validaciones y manejo de errores.
 
 ## Herramientas utilizadas para realización
 -TYPESCRIPT-HTML5-CSS3-BOOTSTRAP-ANGULAR 11-ANGULAR MATERIAL-TYPE-ORM-MYSQL
@@ -22,8 +22,6 @@ Back-End: dentro de la carpeta de la api ejecutar el comando "npm run dev".
 ![4 four](https://github.com/Estiiven/login-angular-roles/assets/48731786/00f71eec-ca56-4de7-a879-e375b91dd7b7)
 
 ![5 five](https://github.com/Estiiven/login-angular-roles/assets/48731786/173abe3d-179a-41d3-a114-f75f1c91c534)
-
-![6 six](https://github.com/Estiiven/login-angular-roles/assets/48731786/50d0d56e-1eb8-4181-9a45-f56af1e7feef)
 
 ![7 seven](https://github.com/Estiiven/login-angular-roles/assets/48731786/cc684eed-d03a-4910-a6e1-4b61754abadd)
 
